@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type='text/javascript' src='main.js'></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a href="/" class="logo_wrapper">
+        <img class="logo" src="logo_small.png" alt="로고">
+        <div class="logo_txt">PROJECT<br>PORTFOLIO</div>
+    </a>
+    <div class="service_ui">
+      <div class="search_wrapper">
+        <form action="">
+          <input type="text" placeholder="프로젝트 검색" name="search">
+          <button type="submit" class="material-icons search">search</button>
+        </form>
+      </div>
+      <div class="index_wrapper">
+        <span>목차</span>
+        <ul id="table_of_contents">
+          <li data-id="toc_1">국가 대형 프로젝트 및 대규모 이벤트<span class="material-icons expand">expand_more</span></li>
+          <ul class="sub_index" id="toc_1">
+          </ul>
+          <li data-id="toc_2">기업문화 이벤트 및 마케팅<span class="material-icons expand">expand_more</span>
+          </li>
+          <ul class="sub_index" id="toc_2">
+          </ul>
+          <li data-id="toc_3">브랜드 인지도 및 체험<span class="material-icons expand">expand_more</span></li>
+          <ul class="sub_index" id="toc_3">
+          </ul>
+          <li data-id="toc_4">연출행사<span class="material-icons expand">expand_more</span></li>
+          <ul class="sub_index" id="toc_4">
+          </ul>
+          <li data-id="toc_5">사내 이벤트 및 캠페인<span class="material-icons expand">expand_more</span></li>
+          <ul class="sub_index" id="toc_5">
+          </ul>
+          <li data-id="toc_6">브랜드 유통 채널 마케팅<span class="material-icons expand">expand_more</span></li>
+          <ul class="sub_index" id="toc_6">
+          </ul>
+        </ul>
+      </div>
+    </div>
+    <div class="ui_wrapper">
+      <span class='button_ui' id="add_project">프로젝트 추가</span>
+      <span class='button_ui' id="logout">로그아웃</span>
+    </div>
+  </nav>
+  <div class="content_wrapper">
+    <!-- <div class="img_wrapper"> -->
+    <form method='post' class="img_wrapper" enctype="multipart/form-data">
+      <div class="img_column concept_img">
+        <span>2D IMAGE</span>
+        <ul>
+        </ul>
+        <label for="c_img_register" class="img_regi_btn material-icons">add_circle_outline</label>
+        <input id="c_img_register" type='file' name='concept_images' accept=".jpg, .jpeg, .png" multiple>
+      </div>
+      <div class="img_column reference_img">
+        <span>3D IMAGE</span>
+        <ul>
+        </ul>
+        <label for="r_img_register" class="img_regi_btn material-icons">add_circle_outline</label>
+        <input id="r_img_register" type='file' name='reference_images' accept=".jpg, .jpeg, .png" multiple>
+      </div>
+    </form>
+    <!-- </div> -->
+    <div class="txt_wrapper">
+      <div class="txt_card">
+        <div class="proj_title"></div>
+        <div class="proj_detail">
+          <div class="proj_spec">
+            <div class="date"><span>일시</span></div>
+            <div class="location"><span>장소</span></div>
+            <div class="target"><span>대상</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <i class="material-icons prev_proj">arrow_back_ios</i>
+        <i class="material-icons next_proj">arrow_forward_ios</i>
+      </div>
+    </div>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
